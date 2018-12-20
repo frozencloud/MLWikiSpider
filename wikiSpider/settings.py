@@ -8,6 +8,7 @@
 #     https://doc.scrapy.org/en/latest/topics/settings.html
 #     https://doc.scrapy.org/en/latest/topics/downloader-middleware.html
 #     https://doc.scrapy.org/en/latest/topics/spider-middleware.html
+import os
 
 BOT_NAME = 'wikiSpider'
 
@@ -103,21 +104,43 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
+
 ITEM_PIPELINES = {
-    'wikiSpider.pipelines.WikispiderPipeline': 300,
+    'wikiSpider.pipelines.WikiImagePipelines': 300,
+    'wikiSpider.pipelines.WikispiderPipeline': 400,
+    'scrapy.pipelines.images.ImagesPipeline': 1
 }
+IMAGES_URLS_FIELD = "front_image_url"
+# 获取当前文件路径
+project_dir = os.path.abspath(os.path.dirname(__file__))
+# 设置图片保存路径
+IMAGES_STORE = os.path.join(project_dir, 'images')
+
+# 生成缩略图
+IMAGES_THUMBS = {
+    'small': (60, 60),  # (宽， 高)
+    'big': (96, 96),
+}
+
+# 90天的图片失效期限
+IMAGES_EXPIRES = 90
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
-# AUTOTHROTTLE_ENABLED = True
+# 启用AutoThrottle扩展
+AUTOTHROTTLE_ENABLED = True
 # The initial download delay
-# AUTOTHROTTLE_START_DELAY = 5
+# 初始下载延迟(单位:秒)
+AUTOTHROTTLE_START_DELAY = 5
 # The maximum download delay to be set in case of high latencies
-# AUTOTHROTTLE_MAX_DELAY = 60
+# 在高延迟情况下最大的下载延迟(单位秒)
+AUTOTHROTTLE_MAX_DELAY = 60
 # The average number of requests Scrapy should be sending in parallel to
 # each remote server
-# AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
+# 设置 Scrapy应该与远程网站并行发送的平均请求数, 目前是以1个并发请求数
+AUTOTHROTTLE_TARGET_CONCURRENCY = 1.0
 # Enable showing throttling stats for every response received:
+# 启用AutoThrottle调试模式
 # AUTOTHROTTLE_DEBUG = False
 
 # Enable and configure HTTP caching (disabled by default)
@@ -130,7 +153,7 @@ ITEM_PIPELINES = {
 MYSQL_HOST = '127.0.0.1'
 MYSQL_DBNAME = 'mldb'
 MYSQL_USER = 'root'
-MYSQL_PASSWD = 'fsi097976'
+MYSQL_PASSWD = '123456'
 MYSQL_PORT = 3306
 
 TB_BASE_INFO = 'tb_base_info'
