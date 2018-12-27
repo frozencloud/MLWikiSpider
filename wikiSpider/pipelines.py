@@ -78,6 +78,7 @@ class WikiImagePipelines(ImagesPipeline):
         image_path = [x['path'] for ok, x in results if ok]
         if not image_path:
             raise DropItem("Item contains no images")
+        print("===>>>"+image_path)
         item['image_paths'] = image_path
         # 定义分类保存的路径
         # print(image_path)

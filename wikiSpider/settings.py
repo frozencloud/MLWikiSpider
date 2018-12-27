@@ -106,9 +106,9 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 
 ITEM_PIPELINES = {
-    'wikiSpider.pipelines.WikiImagePipelines': 300,
+    # 'wikiSpider.pipelines.WikiImagePipelines': 300,
     'wikiSpider.pipelines.WikispiderPipeline': 400,
-    'scrapy.pipelines.images.ImagesPipeline': 1
+    # 'scrapy.pipelines.images.ImagesPipeline': 1
 }
 IMAGES_URLS_FIELD = "front_image_url"
 # 获取当前文件路径
