@@ -12,7 +12,7 @@ class WikispiderItem(scrapy.Item):
     # 名称
     monster_name = scrapy.Field()
     # 魔灵图片
-    image_urls = scrapy.Field()
+    monster_icon = scrapy.Field()
     # 魔灵类型：辅助、攻击、体力等
     monster_type = scrapy.Field()
     # 最大等级
@@ -25,5 +25,7 @@ class WikispiderItem(scrapy.Item):
     monster_def = scrapy.Field()
     # 基础速度
     monster_spd = scrapy.Field()
+    # 属性
+    monster_attribute = scrapy.Field()
     # 图片在本地的保存目录
     image_paths = scrapy.Field()

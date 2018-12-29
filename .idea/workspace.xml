@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c4ea20d-44d1-4af5-a426-f38c7a37e33f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.txt" beforeDir="false" afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikiSpider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikiSpider/items.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wikiSpider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikiSpider/pipelines.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wikiSpider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikiSpider/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wikiSpider/spiders/ml_wiki_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikiSpider/spiders/ml_wiki_spider.py" afterDir="false" />
@@ -15,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MLWiki$start.coverage" NAME="start Coverage Results" MODIFIED="1545839739346" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wikiSpider" />
+    <SUITE FILE_PATH="coverage/MLWiki$start.coverage" NAME="start Coverage Results" MODIFIED="1546016536891" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/wikiSpider" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -28,12 +29,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="mldb" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FileEditorManager">
@@ -41,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wikiSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1330">
-              <caret line="80" selection-start-line="80" selection-end-line="80" />
+            <state relative-caret-position="-266">
+              <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
               <folding>
                 <element signature="e#193#202#0" expanded="true" />
               </folding>
@@ -51,10 +47,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/readme.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wikiSpider/spiders/ml_wiki_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
+            <state relative-caret-position="130">
+              <caret line="29" column="33" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="33" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
@@ -63,10 +68,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://F:/Python36/Lib/urllib/parse.py">
+        <entry file="file://$PROJECT_DIR$/wikiSpider/items.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9177">
-              <caret line="485" column="13" selection-start-line="485" selection-start-column="10" selection-end-line="485" selection-end-column="13" />
+            <state relative-caret-position="72">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -74,15 +79,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wikiSpider/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2071">
-              <caret line="109" column="51" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
+            <state relative-caret-position="190">
+              <caret line="158" selection-start-line="158" selection-end-line="158" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36ed0519-c9ef-416e-9574-a9e336290ba8/console.sql">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -94,11 +94,15 @@
       <find>images_</find>
       <find>IMAGES_EXPIRES</find>
       <find>AUTOTHROTTLE_ENABLED</find>
-      <find>WikiImagePipelines</find>
       <find>IMAGES_URLS_FIELD</find>
-      <find>IMAGES_STORE</find>
       <find>imagesfull</find>
       <find>ml_list</find>
+      <find>WikispiderPipeline</find>
+      <find>WikiImagePipelines</find>
+      <find>item_completed</find>
+      <find>IMAGES_STORE</find>
+      <find>__init__()</find>
+      <find>settings</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -115,11 +119,11 @@
       <list>
         <option value="$PROJECT_DIR$/wikiSpider/start.py" />
         <option value="$PROJECT_DIR$/wikiSpider/middlewares.py" />
-        <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/wikiSpider/items.py" />
-        <option value="$PROJECT_DIR$/wikiSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/wikiSpider/settings.py" />
         <option value="$PROJECT_DIR$/wikiSpider/spiders/ml_wiki_spider.py" />
+        <option value="$PROJECT_DIR$/wikiSpider/items.py" />
+        <option value="$PROJECT_DIR$/wikiSpider/pipelines.py" />
+        <option value="$PROJECT_DIR$/readme.txt" />
       </list>
     </option>
   </component>
@@ -154,7 +158,7 @@
               <item name="MLWiki" type="b2602c69:ProjectViewProjectNode" />
               <item name="MLWiki" type="462c0819:PsiDirectoryNode" />
               <item name="wikiSpider" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -168,7 +172,7 @@
     <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHub/PortableGit_69bd5e6f85e4842f07db71c9618a621154c52254/bin/git.exe" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -230,6 +234,8 @@
       <workItem from="1545749063547" duration="593000" />
       <workItem from="1545831308036" duration="6621000" />
       <workItem from="1545917319295" duration="599000" />
+      <workItem from="1545923734829" duration="329000" />
+      <workItem from="1546001134764" duration="15649000" />
     </task>
     <task id="LOCAL-00001" summary="项目目标">
       <created>1545149280319</created>
@@ -245,23 +251,29 @@
       <option name="project" value="LOCAL" />
       <updated>1545322312512</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="添加解析多URL爬取，出现死循环一场，去重未生效.">
+      <created>1545924053866</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1545924053866</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32098000" />
+    <option name="totallyTimeSpent" value="48076000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.22390318" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.22692889" />
+      <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" weight="0.22692889" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.91967213" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5442623" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32131147" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -278,12 +290,12 @@
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22390318" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.22692889" />
+      <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" visible="true" weight="0.22692889" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37213114" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36557376" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -298,7 +310,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
-      <window_info anchor="right" id="Database" order="4" visible="true" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -310,7 +322,19 @@
     </ignored-roots>
     <MESSAGE value="项目目标" />
     <MESSAGE value="增加自动下载图片功能（未完成）" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加自动下载图片功能（未完成）" />
+    <MESSAGE value="添加解析多URL爬取，出现死循环一场，去重未生效." />
+    <option name="LAST_COMMIT_MESSAGE" value="添加解析多URL爬取，出现死循环一场，去重未生效." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/wikiSpider/pipelines.py</url>
+          <line>108</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wikiSpider/start.py">
@@ -324,20 +348,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-277">
           <caret line="38" column="92" selection-start-line="38" selection-start-column="85" selection-end-line="38" selection-end-column="92" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/readme.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/Python36/Lib/site-packages/scrapy/pipelines/images.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
         </state>
       </provider>
     </entry>
@@ -370,50 +380,92 @@
     <entry file="file://$PROJECT_DIR$/wikiSpider/images/full/2a301b1eece98c7dc1d04b9cad363f96fcd5c692.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wikiSpider/images/full/0e3679af1579003169a381ebf99659da5a2a9d0d.jpg">
-      <provider selected="true" editor-type-id="images" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36ed0519-c9ef-416e-9574-a9e336290ba8/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/wikiSpider/items.py">
+    <entry file="file://F:/Python36/Lib/urllib/parse.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="27" column="16" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="16" />
+        <state relative-caret-position="522">
+          <caret line="485" column="13" selection-start-line="485" selection-start-column="10" selection-end-line="485" selection-end-column="13" />
         </state>
       </provider>
     </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/scrapy/pipelines/media.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="163" column="22" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/twisted/internet/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="653" selection-start-line="653" selection-end-line="653" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/scrapy/pipelines/images.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="97" selection-start-line="97" selection-end-line="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/scrapy/middleware.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="291">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/pymysql/cursors.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1901">
+          <caret line="150" column="27" selection-start-line="150" selection-start-column="22" selection-end-line="150" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/spiders/ml_wiki_spider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="29" column="33" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="33" />
+          <folding>
+            <element signature="e#24#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/items.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/images/full/0e3679af1579003169a381ebf99659da5a2a9d0d.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/wikiSpider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1330">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
+        <state relative-caret-position="-266">
+          <caret line="91" column="43" selection-start-line="91" selection-start-column="43" selection-end-line="91" selection-end-column="43" />
           <folding>
             <element signature="e#193#202#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://F:/Python36/Lib/urllib/parse.py">
+    <entry file="file://$PROJECT_DIR$/readme.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9177">
-          <caret line="485" column="13" selection-start-line="485" selection-start-column="10" selection-end-line="485" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wikiSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2071">
-          <caret line="109" column="51" selection-start-line="109" selection-start-column="51" selection-end-line="109" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/36ed0519-c9ef-416e-9574-a9e336290ba8/console.sql">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wikiSpider/spiders/ml_wiki_spider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="57" column="34" selection-start-line="57" selection-start-column="34" selection-end-line="57" selection-end-column="34" />
-          <folding>
-            <element signature="e#24#37#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="304">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
         </state>
       </provider>
     </entry>
