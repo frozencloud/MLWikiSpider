@@ -114,12 +114,13 @@ IMAGES_URLS_FIELD = "front_image_url"
 # 获取当前文件路径
 project_dir = os.path.abspath(os.path.dirname(__file__))
 # 设置图片保存路径
-IMAGES_STORE = os.path.join(project_dir, 'images')
+IMAGES_STORE = "e:/download/mlwiki/images/"
+# IMAGES_STORE = os.path.join(project_dir, 'images')
 
 # 生成缩略图
 IMAGES_THUMBS = {
-    'small': (60, 60),  # (宽， 高)
-    'big': (96, 96),
+    'small': (36, 36),  # (宽， 高)
+    'big': (60, 60),
 }
 
 # 90天的图片失效期限

@@ -5,7 +5,6 @@
 # Don't forget to add your pipeline to the ITEM_PIPELINES setting
 # See: https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 import os
-import shutil
 
 import pymysql
 from scrapy import Request
@@ -13,8 +12,9 @@ from scrapy.exceptions import DropItem
 from scrapy.pipelines.images import ImagesPipeline
 from scrapy.utils.project import get_project_settings
 
-from wikiSpider.settings import MYSQL_HOST, MYSQL_DBNAME, MYSQL_USER, MYSQL_PASSWD, MYSQL_PORT, \
-    TB_BASE_INFO
+from wikiSpider.settings import MYSQL_HOST, MYSQL_DBNAME, MYSQL_USER, MYSQL_PASSWD, \
+    MYSQL_PORT, TB_BASE_INFO
+from wikiSpider.settings import IMAGES_STORE
 
 
 class WikispiderPipeline(object):
@@ -107,12 +107,13 @@ class WikiImagePipelines(ImagesPipeline):
 
         # 更新数据库
         sql_str = 'update ' + TB_BASE_INFO + ' set icon_local_path = %s where monster_icon = %s'
-        self.cursor.execute(sql_str, (image_path, image_url))
+        self.cursor.execute(sql_str, (os.path.join(IMAGES_STORE,image_path), image_url))
         self.conn.commit()
 
-            # pic_name = v.replace('full/', '')
-            # pic_big_name = pic_name.replace('.jpg', '') + '_b.jpg'
-            # shutil.move(self.img_store + '\\full\\' + pic_name, pic_name)
-            # shutil.move(self.img_store + '\\thumbs\\big\\' + pic_name, pic_big_name)
+        # 把图片保存到其他位置
+        # pic_name = v.replace('full/', '')
+        # pic_big_name = pic_name.replace('.jpg', '') + '_b.jpg'
+        # shutil.move(self.img_store + '\\full\\' + pic_name, pic_name)
+        # shutil.move(self.img_store + '\\thumbs\\big\\' + pic_name, pic_big_name)
 
         return item

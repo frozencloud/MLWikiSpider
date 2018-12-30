@@ -4,10 +4,10 @@
 #
 # See documentation in:
 # https://doc.scrapy.org/en/latest/topics/spider-middleware.html
-import base64
+
+import random
 
 from scrapy import signals
-import random
 
 
 class WikispiderSpiderMiddleware(object):
