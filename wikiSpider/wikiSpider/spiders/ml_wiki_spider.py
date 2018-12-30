@@ -9,7 +9,7 @@ class MlWikiSpiderSpider(scrapy.Spider):
     name = 'ml_wiki_spider'
     host = 'http://summonerswar.wikia.com'
 
-    def __init__(self, category=None, *args, **kwargs):
+    def __init__(self, *args, **kwargs):
         super(MlWikiSpiderSpider, self).__init__(*args, **kwargs)
         # 允许的域名
         self.allowed_domains = ['summonerswar.wikia.com']
@@ -21,14 +21,13 @@ class MlWikiSpiderSpider(scrapy.Spider):
     '''
 
     def parse(self, response):
-        print("============================================" + response.url)
-        # self.log(response.headers)
-        # print response.text
+        self.log(response.headers)
         ml_list = response.xpath("//div[@class='tabbertab']//table//tr[not(.//th)]")
         for i_item in ml_list:
             ml_item = WikispiderItem()
-            ml_item['monster_icon'] = [i_item.xpath(".//td//a[@class='image image-thumbnail link-inter"
-                                                 "nal']//img/@data-src").extract_first()]
+            ml_item['monster_icon'] = [
+                i_item.xpath(".//td//a[@class='image image-thumbnail link-inter"
+                             "nal']//img/@data-src").extract_first()]
 
             ml_item['monster_name'] = i_item.xpath(".//td//a[1]//text()").extract_first()
 
