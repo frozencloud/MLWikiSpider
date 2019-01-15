@@ -2,11 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6c4ea20d-44d1-4af5-a426-f38c7a37e33f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/proxy_spider/proxy_spider/spiders/ProxySpider.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vc_spider/vc_spider/spiders/VcSpider.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MLWiki.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MLWiki.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vc_spider/vc_spider/start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wikiSpider/wikiSpider/spiders/ml_wiki_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikiSpider/wikiSpider/spiders/ml_wiki_spider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_spider/vc_spider/items.py" beforeDir="false" afterPath="$PROJECT_DIR$/vc_spider/vc_spider/items.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_spider/vc_spider/middlewares.py" beforeDir="false" afterPath="$PROJECT_DIR$/vc_spider/vc_spider/middlewares.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_spider/vc_spider/pipelines.py" beforeDir="false" afterPath="$PROJECT_DIR$/vc_spider/vc_spider/pipelines.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_spider/vc_spider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/vc_spider/vc_spider/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vc_spider/vc_spider/spiders/VcSpider.py" beforeDir="false" afterPath="$PROJECT_DIR$/vc_spider/vc_spider/spiders/VcSpider.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wikiSpider/wikiSpider/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/wikiSpider/wikiSpider/start.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +18,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/MLWiki$start.coverage" NAME="start Coverage Results" MODIFIED="1546171399171" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/MLWiki$start__1_.coverage" NAME="start (1) Coverage Results" MODIFIED="1547570587078" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vc_spider/vc_spider" />
+    <SUITE FILE_PATH="coverage/MLWiki$start.coverage" NAME="start Coverage Results" MODIFIED="1547558128082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -33,20 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/proxy_spider/proxy_spider/spiders/ProxySpider.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/spiders/VcSpider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+            <state relative-caret-position="73">
+              <caret line="37" column="93" selection-start-line="37" selection-start-column="93" selection-end-line="37" selection-end-column="93" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
               </folding>
@@ -55,22 +50,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/items.py">
+        <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/spiders/ml_wiki_spider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="26" column="8" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+            <state relative-caret-position="114">
+              <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+              <folding>
+                <element signature="e#24#37#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/spiders/ml_wiki_spider.py">
+        <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1159">
-              <caret line="61" column="41" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="61" selection-end-column="41" />
+            <state relative-caret-position="180">
+              <caret line="39" column="55" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="55" />
               <folding>
-                <element signature="e#24#37#0" expanded="true" />
+                <element signature="e#193#202#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/items.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/pipelines.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+              <folding>
+                <element signature="e#193#207#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -94,13 +122,15 @@
       <find>IMAGES_URLS_FIELD</find>
       <find>imagesfull</find>
       <find>ml_list</find>
-      <find>WikispiderPipeline</find>
       <find>WikiImagePipelines</find>
       <find>item_completed</find>
       <find>__init__()</find>
       <find>settings</find>
       <find>IMAGES_STORE</find>
       <find>join</find>
+      <find>RANDOM_UA_TYPE</find>
+      <find>WikispiderPipeline</find>
+      <find>VcSpiderPipeline</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -122,12 +152,18 @@
         <option value="$PROJECT_DIR$/wikiSpider/items.py" />
         <option value="$PROJECT_DIR$/wikiSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/readme.txt" />
-        <option value="$PROJECT_DIR$/wikiSpider/wikiSpider/middlewares.py" />
         <option value="$PROJECT_DIR$/wikiSpider/wikiSpider/settings.py" />
         <option value="$PROJECT_DIR$/wikiSpider/wikiSpider/pipelines.py" />
         <option value="$PROJECT_DIR$/proxy_spider/proxy_spider/spiders/ProxySpider.py" />
         <option value="$PROJECT_DIR$/wikiSpider/wikiSpider/spiders/ml_wiki_spider.py" />
         <option value="$PROJECT_DIR$/vc_spider/vc_spider/items.py" />
+        <option value="$PROJECT_DIR$/wikiSpider/wikiSpider/middlewares.py" />
+        <option value="$PROJECT_DIR$/vc_spider/vc_spider/middlewares.py" />
+        <option value="$PROJECT_DIR$/vc_spider/vc_spider/settings.py" />
+        <option value="$PROJECT_DIR$/start.py" />
+        <option value="$PROJECT_DIR$/wikiSpider/wikiSpider/start.py" />
+        <option value="$PROJECT_DIR$/vc_spider/vc_spider/start.py" />
+        <option value="$PROJECT_DIR$/vc_spider/vc_spider/pipelines.py" />
         <option value="$PROJECT_DIR$/vc_spider/vc_spider/spiders/VcSpider.py" />
       </list>
     </option>
@@ -152,24 +188,6 @@
             <path>
               <item name="MLWiki" type="b2602c69:ProjectViewProjectNode" />
               <item name="MLWiki" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLWiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLWiki" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy_spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLWiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLWiki" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy_spider" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MLWiki" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MLWiki" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="proxy_spider" type="462c0819:PsiDirectoryNode" />
-              <item name="spiders" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="MLWiki" type="b2602c69:ProjectViewProjectNode" />
@@ -220,14 +238,17 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/start.py" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\pychamWorkSpace\MLWiki\wikiSpider\wikiSpider" />
+      <recent name="E:\pychamWorkSpace\MLWiki\vc_spider" />
       <recent name="E:\pychamWorkSpace\MLWiki" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\pychamWorkSpace\MLWiki\vc_spider\vc_spider" />
       <recent name="E:\pychamWorkSpace\MLWiki\wikiSpider\spiders" />
       <recent name="E:\pychamWorkSpace\MLWiki\wikiSpider" />
     </key>
@@ -244,7 +265,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.start (1)">
+    <configuration name="start (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="MLWiki" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vc_spider/vc_spider" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vc_spider/vc_spider/start.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="start" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="MLWiki" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,6 +310,11 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.start (1)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -290,7 +338,12 @@
       <workItem from="1546001134764" duration="15649000" />
       <workItem from="1546101641988" duration="539000" />
       <workItem from="1546137475105" duration="9487000" />
-      <workItem from="1546174814043" duration="6107000" />
+      <workItem from="1546174814043" duration="6392000" />
+      <workItem from="1546236544581" duration="4342000" />
+      <workItem from="1546520665811" duration="1066000" />
+      <workItem from="1546663022899" duration="6061000" />
+      <workItem from="1547557611896" duration="177000" />
+      <workItem from="1547557892439" duration="12296000" />
     </task>
     <task id="LOCAL-00001" summary="项目目标">
       <created>1545149280319</created>
@@ -313,23 +366,29 @@
       <option name="project" value="LOCAL" />
       <updated>1545924053866</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加神域召唤爬虫和动态IP池爬虫，功能待实现">
+      <created>1546186468658</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1546186468658</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64209000" />
+    <option name="totallyTimeSpent" value="88436000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.2375189" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498708" weight="0.25642964" />
       <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" weight="0.22692889" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2967213" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.32131147" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4852459" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49344262" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -346,13 +405,13 @@
       <window_info anchor="right" id="Database" order="4" weight="0.32980332" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.22692889" />
-      <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" visible="true" weight="0.22692889" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498708" visible="true" weight="0.25642964" />
+      <window_info id="Structure" order="1" sideWeight="0.501292" side_tool="true" weight="0.22692889" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.36557376" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.19180328" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.49344262" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -379,7 +438,8 @@
     <MESSAGE value="项目目标" />
     <MESSAGE value="增加自动下载图片功能（未完成）" />
     <MESSAGE value="添加解析多URL爬取，出现死循环一场，去重未生效." />
-    <option name="LAST_COMMIT_MESSAGE" value="添加解析多URL爬取，出现死循环一场，去重未生效." />
+    <MESSAGE value="增加神域召唤爬虫和动态IP池爬虫，功能待实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加神域召唤爬虫和动态IP池爬虫，功能待实现" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/wikiSpider/start.py" />
@@ -455,47 +515,9 @@
     <entry file="file://$PROJECT_DIR$/wikiSpider/spiders/ml_wiki_spider.py" />
     <entry file="file://$PROJECT_DIR$/wikiSpider/items.py" />
     <entry file="file://$PROJECT_DIR$/wikiSpider/settings.py" />
-    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/middlewares.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#169#182#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1102">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/proxy_spider/scrapy.cfg">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-86" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/start.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="114" column="56" selection-start-line="114" selection-start-column="56" selection-end-line="114" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/proxy_spider/proxy_spider/spiders/ProxySpider.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="30" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/proxy_spider/proxy_spider/items.py">
@@ -508,27 +530,124 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/proxy_spider/proxy_spider/spiders/ProxySpider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="30" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy_spider/proxy_spider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-513" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/proxy_spider/proxy_spider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2185">
+          <caret line="115" selection-start-line="115" selection-end-line="128" selection-end-column="45" />
+          <folding>
+            <element signature="e#169#182#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/middlewares.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1833">
+          <caret line="118" column="22" selection-start-line="118" selection-start-column="22" selection-end-line="118" selection-end-column="22" />
+          <folding>
+            <element signature="e#168#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="159" selection-start-line="159" selection-end-line="159" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="148" column="14" selection-start-line="148" selection-end-line="148" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/scrapy/utils/defer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="101" selection-start-line="101" selection-end-line="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Python36/Lib/site-packages/twisted/internet/task.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="73">
+          <caret line="516" selection-start-line="516" selection-end-line="516" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/spiders/ml_wiki_spider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="61" column="41" lean-forward="true" selection-start-line="60" selection-start-column="12" selection-end-line="61" selection-end-column="41" />
+        <state relative-caret-position="114">
+          <caret line="29" column="69" lean-forward="true" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/start.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/items.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="8" />
+        <state relative-caret-position="256">
+          <caret line="47" column="29" lean-forward="true" selection-start-line="47" selection-start-column="29" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wikiSpider/wikiSpider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="39" column="55" selection-start-line="39" selection-start-column="43" selection-end-line="39" selection-end-column="55" />
+          <folding>
+            <element signature="e#193#202#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/pipelines.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
+          <folding>
+            <element signature="e#193#207#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vc_spider/vc_spider/spiders/VcSpider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="32" column="55" lean-forward="true" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
+        <state relative-caret-position="73">
+          <caret line="37" column="93" selection-start-line="37" selection-start-column="93" selection-end-line="37" selection-end-column="93" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>

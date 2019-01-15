@@ -25,11 +25,20 @@ class RoleSpiderItem(scrapy.Item):
     race = scrapy.Field()
     # 评级
     rate = scrapy.Field()
+    # 详情页url
+    detail_url = scrapy.Field()
+
+
+class RoleDetailItem(scrapy.Item):
+    # 详情页url
+    detail_url = scrapy.Field()
+    # 评级
+    rate = scrapy.Field()
     # 竞技场评分
     arena_score = scrapy.Field()
     # 降临评分
     befall_score = scrapy.Field()
-    # 恢复和辅助出色的技能分析
+    # 技能分析
     skill_analyze = scrapy.Field()
     # 竞技场作用分析
     arena_analyze = scrapy.Field()
