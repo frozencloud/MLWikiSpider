@@ -22,20 +22,20 @@ class VcSpider(Spider):
         for item in role_list:
             print(item)
             role_item = RoleSpiderItem()
-            role_item['name'] = item.xpath('//a//img/@title').extract_first()
-            role_item['icon_url'] = item.xpath('//a//img//@src').extract_first()
-            role_item['attribute'] = item.xpath('//td[2]//text()').extract_first()
-            role_item['attack_distance'] = item.xpath('//td[3]//text()').extract_first()
-            role_item['race'] = item.xpath('//td[4]//text()').extract_first()
-            role_item['rate'] = item.xpath('//span[contains(@style,"text-align:center") and '
+            role_item['name'] = item.xpath('.//a//img/@title').extract_first()
+            role_item['icon_url'] = item.xpath('.//a//img//@data-lazy-src').extract_first()
+            role_item['attribute'] = item.xpath('.//td[2]//text()').extract_first()
+            role_item['attack_distance'] = item.xpath('.//td[3]//text()').extract_first()
+            role_item['race'] = item.xpath('.//td[4]//text()').extract_first()
+            role_item['rate'] = item.xpath('.//span[contains(@style,"text-align:center") and '
                                            'contains(@style,"display:block")]//text()').\
                 extract_first()
-            a = item.xpath('//td[@style="text-align: center;"]//a//@href').extract_first()
+            a = item.xpath('.//td[@style="text-align: center;"]//a//@href').extract_first()
             role_item['detail_url'] = parse.urljoin(self.host, a)
             yield role_item
 
         for i in role_list:
-            new_url = i.xpath('//td[@style="text-align: center;"]//a//@href').extract_first()
+            new_url = i.xpath('.//td[@style="text-align: center;"]//a//@href').extract_first()
             new_url = parse.urljoin(self.host, new_url)
             print("new_url = " + new_url)
             yield Request(url=new_url, callback=self.parse2)
