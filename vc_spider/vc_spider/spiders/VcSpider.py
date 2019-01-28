@@ -42,20 +42,18 @@ class VcSpider(Spider):
 
     def parse2(self, response):
         detail_list = response.xpath('//div[@class="contents clearfix"]')
+        # print(response.text)
         for item in detail_list:
             detail_item = RoleDetailItem()
 
             detail_item['detail_url'] = response.url
             # 评级
-            detail_item['rate'] = item.xpath('//table[@class="tableLine"]//tr[@class="even"]'
-                                             '//td[1]//span//text()')
+            detail_item['rate'] = item.xpath('.//table[@class="tableLine"]//tr//td[1]//span[contains(@style,"font-weight: bold") and contains(@style,"font-size: 200%")]//text()').extract_first()
             # 竞技场评分
-            detail_item['arena_score'] = item.xpath('//table[@class="tableLine"]//tr[@class="even"]'
-                                                    '//td[2]//span//text()')
+            detail_item['arena_score'] = item.xpath('.//table[@class="tableLine"]//tr//td[2]//span[@class="tensu redtxt"]//text()').extract_first()
             # 降临评分
             detail_item['befall_score'] = item.xpath(
-                '//table[@class="tableLine"]//tr[@class="even"]'
-                '//td[3]//span//text()')
+                './/table[@class="tableLine"]//tr//td[3]//span[@class="tensu redtxt"]//text()').extract_first()
             # # 技能分析
             # detail_item['skill_analyze'] = item.xpath('')
             # # 竞技场作用分析

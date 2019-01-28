@@ -61,11 +61,7 @@ class VcSpiderPipeline(object):
             detail_url = pymysql.escape_string(item['detail_url'])
             arena_score = pymysql.escape_string(item['arena_score'])
             befall_score = pymysql.escape_string(item['befall_score'])
-            sql = "insert into " + TB_VCROLE_INFO \
-                  + "(arena_score,befall_score)" \
-                    " select %s,%s" \
-                    " from DUAL where not exists (select * from " + TB_VCROLE_INFO + \
-                  "where detail_url = %s)"
+            sql = "update "+TB_VCROLE_INFO+" set arena_score = %s,befall_score = %s  where detail_url = %s"
             self.cursor.execute(sql, (arena_score, befall_score, detail_url))
             self.conn.commit()
             return item
